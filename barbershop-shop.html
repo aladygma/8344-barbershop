@@ -1,3 +1,6 @@
+<!-- Привет Андрей!
+    Я решил верстать все на DIV блоках, так-как я до конца не понимаю функции SECTION, ARTICLE, ASIDE и т.д   -->
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -11,11 +14,11 @@
         </div>
         <div class="main-navigation">
           <ul>
-            <li>Информация</li>
-            <li>Новости</li>
-            <li>Прайс-лист</li>
-            <li>Магазин</li>
-            <li>Контакты</li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li class="current-page">Магазин</li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </div>
       <div class="user-block">
@@ -29,72 +32,81 @@
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
-        <li><a href="#">Средства для ухода</a></li>
+        <li class="breadcrump-current">Средства для ухода</li>
       </ul>
     </div>
+    <!--Андрей! Обрати пожалуйста внимание как я сверстал форму фильтра. Я решил сделать ее чекбоксами и радиокнопками.
+        Я знаю что они плохо стилизируются, но я не пойму как это можно сверстать по другому.   -->
     <div class="filter">
-      <h2>Производители</h2>
-      <ul class="filter-items">
-        <li><a href="#">Baxter of california</a></li>
-        <li><a href="#">Mr Natty</a></li>
-        <li><a href="#">Suavecito</a></li>
-        <li><a href="#">Malin-Goetz</a></li>
-        <li><a href="#">Murray's</a></li>
-        <li><a href="#">American crew</a></li>
-      </ul>
-      <h2>Группы товаров:</h2>
-      <a class="btn" href="#">Показать</a>
+      <form class="filter-items" action="#" method="post">
+        <h2>Производители</h2>
+        <input type="checkbox" name="Baxter_of_california" id="checkbox_1" checked> <label for="checkbox_1">Baxter of california</label><br>
+        <input type="checkbox" name="Mr_Natty" id="checkbox_2"> <label for="checkbox_2">Mr Natty</label><br>
+        <input type="checkbox" name="Suavecito" id="checkbox_3" checked> <label for="checkbox_3">Suavecito</label><br>
+        <input type="checkbox" name="Malin_Goetz" id="checkbox_4"> <label for="checkbox_4">Malin-Goetz</label><br>
+        <input type="checkbox" name="Murray's" id="checkbox_5"> <label for="checkbox_5">Murray's</label><br>
+        <input type="checkbox" name="Malin_Goetz" id="checkbox_6" checked> <label for="checkbox_6">American crew</label><br>
+        <h2>Группы товаров:</h2>
+        <input type="radio" name="goods_group" value="for_shave" id="radio_1"> <label for="radio_1">Бритвенные принадлежности</label><br>
+        <input type="radio" name="goods_group" value="for_care" id="radio_2" checked> <label for="radio_2">Средства для ухода</label><br>
+        <input type="radio" name="goods_group" value="accessories" id="radio_3"> <label for="radio_3">Аксессуары</label><br>
+      <button class="btn" href="#">Показать</a>
+      </form>
     </div>
+    <!-- Еще я не пойму как правильно сверстать наименование товара и его название во Въюшке.
+         В PSD шаблоне строчки, например - гель для волос "Suavecito" - стоят одна под другой, и в слове "Suavecito"
+         все буквы заглавные. Я так понимаю, что к ним будет применен соответствующий стиль в CSS.
+         Как это правильно сверстать? На ум приходит только тег <span>, но ведь его нельзя вкладывать в ссылку.      -->
     <div class="goods">
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Набор для путешествий &laquo;Baxter of california&raquo;</a>
+        <div class="btn goods-item-price">2900 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Увлажняющий кондиционер &laquo;Baxter of california&raquo;</a>
+        <div class="btn goods-item-price">750 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Гель для волос &laquo;Suavecito&raquo;</a>
+        <div class="btn goods-item-price">290 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Глина для укладки волос &laquo;American crew&raquo;</a>
+        <div class="btn goods-item-price">500 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Гель для волос &laquo;American crew&raquo;</a>
+        <div class="btn goods-item-price">300 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
       <div class="goods-item">
         <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-        <a class="goods-item-name" href="#">"Lorem ipsum dolor."</a>
-        <div class="btn goods-item-price">1000 Руб</div>
+        <a class="goods-item-name" href="#">Набор для бритья &laquo;Baxter of california&raquo;</a>
+        <div class="btn goods-item-price">3900 Руб</div>
         <a class="btn" href="#">Купить</a>
       </div>
-    </div>
-    <div class="pages">
-      <a class="btn" href="#">1</a>
-      <a class="btn" href="#">2</a>
-      <a class="btn" href="#">3</a>
-      <a class="btn" href="#">4</a>
-      <a class="btn" href="#">5</a>
+      <div class="pages">
+        <a class="btn" href="#">1</a>
+        <a class="btn current-btn" href="#">2</a>
+        <a class="btn" href="#">3</a>
+        <a class="btn" href="#">4</a>
+        <a class="btn" href="#">5</a>
+      </div>
     </div>
   </div>
   <div class="main-footer">
     <div class="container">
       <div class="footer-contacts">
-        Барбершоп «Бородинский»<br>
+        Барбершоп &laquo;Бородинский&raquo;<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
