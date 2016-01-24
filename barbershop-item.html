@@ -11,11 +11,11 @@
         </div>
         <div class="main-navigation">
           <ul>
-            <li>Информаци</li>
-            <li>Новости</li>
-            <li>Прайс-лист</li>
-            <li>Магазин</li>
-            <li>Контакты</li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li class="current-page">Магазин</li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </div>
       <div class="user-block">
@@ -25,19 +25,49 @@
   </div>
   <div class="container">
     <div class="bread-crumbs">
-      <h2>Набор для путешествий &laquo;Baxter of California&raquo;</h2>
+      <!--Думаю, что здесь можно использовать заголовок H1-->
+      <h1>Набор для путешествий &laquo;Baxter of california&raquo;</h1>
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Средства для ухода</a></li>
-        <li><a href="#">Набор для путешествий &laquo;Baxter of California&raquo;</a></li>
+        <li class="breadcrump-current">Набор для путешествий &laquo;Baxter of california&raquo;</li>
       </ul>
     </div>
-
+    <div class="gallery">
+      <figure>
+        <img src="http://placehold.it/460x500" alt="Placeholder" width="460" height="500">
+      </figure>
+      <!-- Я сверстал превъюшки списком с изображениями внутри элементов, хотя я не уверен что это правильно.
+           Нужно ли превъюшки делать ссылками?  -->
+      <ul>
+        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
+        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
+        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
+      </ul>
+    </div>
+    <div class="item-description">
+      <b class="if-exists">Есть в наличии</b>
+      <b class="item-code">Артикул: Dexter-AE</b>
+      <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
+        что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
+        увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+      <div class="btn goods-item-price">2900 Руб</div>
+      <a class="btn" href="#">Купить</a>
+      <b class="goods-item-complect">В набор входят</b> <!-- Не уверен в правильном выборе имени класса -->
+      <ul>
+        <li>Средство для умывания(50 мл)</li>
+        <li>Увлажняющий крем(50 мл)</li>
+        <li>Крем для бритья(50 мл)</li>
+        <li>Крем после бритья (50 мл)</li>
+        <li>Удобная кажаная косметичка</li>
+      </ul>
+    </div>
+  </div>
   <div class="main-footer">
     <div class="container">
       <div class="footer-contacts">
-        Барбершоп «Бородинский»<br>
+        Барбершоп &laquo;Бородинский&raquo;<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a href="#">Как нас найти?</a><br>
         Телефон: +7 (812) 666-02-66
