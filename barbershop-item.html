@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <title>Барбершоп &laquo;Borodinski&raquo;</title>
   </head>
   <body>
-  <div class="main-header">
+  <div class="header">
     <div class="container">
         <div class="top-logo">
+          <!--Сделал изображение ссылкой, так-как я думаю что она должна вести на главную  -->
           <a href="#"><img src="http://placehold.it/150x100" alt="logo" width="150" height="100"></a>
         </div>
         <div class="main-navigation">
@@ -24,47 +26,54 @@
     </div>
   </div>
   <div class="container">
-    <div class="bread-crumbs">
-      <!--Думаю, что здесь можно использовать заголовок H1-->
-      <h1>Набор для путешествий &laquo;Baxter of california&raquo;</h1>
-      <ul>
+    <div class="bread-crumbs-section">
+      <h2>Средства для ухода</h2>
+      <ul class="bread-crumbs">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Средства для ухода</a></li>
-        <li class="breadcrump-current">Набор для путешествий &laquo;Baxter of california&raquo;</li>
+        <li class="bread-crumb-current">Набор для путешествий &laquo;Baxter of California&raquo;</li>
       </ul>
     </div>
-    <div class="gallery">
-      <figure>
+    <div class="item-gallery">
+      <figure class="item-big-image">
         <img src="http://placehold.it/460x500" alt="Placeholder" width="460" height="500">
       </figure>
-      <!-- Я сверстал превъюшки списком с изображениями внутри элементов, хотя я не уверен что это правильно.
-           Нужно ли превъюшки делать ссылками?  -->
-      <ul>
-        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
-        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
-        <li><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></li>
+      <ul class="gallery-preview">
+        <li>
+          <a href="#"><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></a>
+        </li>
+        <li>
+          <a href="#"><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></a>
+        </li>
+        <li>
+          <a href="#"><img src="http://placehold.it/140x150" alt="Placeholder" width="140" height="150"></a>
+        </li>
       </ul>
     </div>
-    <div class="item-description">
-      <b class="if-exists">Есть в наличии</b>
-      <b class="item-code">Артикул: Dexter-AE</b>
-      <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
-        что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
-        увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-      <div class="btn goods-item-price">2900 Руб</div>
-      <a class="btn" href="#">Купить</a>
-      <b class="goods-item-complect">В набор входят</b> <!-- Не уверен в правильном выборе имени класса -->
-      <ul>
-        <li>Средство для умывания(50 мл)</li>
-        <li>Увлажняющий крем(50 мл)</li>
-        <li>Крем для бритья(50 мл)</li>
-        <li>Крем после бритья (50 мл)</li>
-        <li>Удобная кажаная косметичка</li>
-      </ul>
+    <div class="item-info">
+      <div class="item-storage-info">
+        <div class="storage-status">Есть на складе</div>
+        <div class="storage-barcode">Артикул:Dexter-AE</div>
+      </div>
     </div>
+    <p class="item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
+      что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем,
+      крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+    <div class="item-price-buy">
+      <div class="item-price">2900 Руб</div>
+      <a class="btn buy-btn" href="#">Купить</a>
+    </div>
+    <h2 class="item-features-title">В набор входят:</h2>
+    <ul class="item-features-list">
+      <li>Средство для умывания (50 мл)</li>
+      <li>Увлажняющий крем (50 мл)</li>
+      <li>Крем для бритья (50 мл)</li>
+      <li>Крем после бритья (50 мл)</li>
+      <li>Удобная кожаная косметичка</li>
+    </ul>
   </div>
-  <div class="main-footer">
+  <div class="footer">
     <div class="container">
       <div class="footer-contacts">
         Барбершоп &laquo;Бородинский&raquo;<br>
