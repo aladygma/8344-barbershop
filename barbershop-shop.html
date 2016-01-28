@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп &laquo;Borodinski&raquo;</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <div class="header">
     <div class="container">
         <div class="top-logo">
-          <a href="#"><img src="http://placehold.it/150x100" alt="logo" width="150" height="100"></a>
+          <a href="#"><img src="img/logo_small.png" alt="logo" width="111" height="24"></a>
         </div>
         <div class="main-navigation">
           <ul>
@@ -26,7 +27,7 @@
   </div>
   <div class="container">
     <div class="bread-crumbs-section">
-      <h2>Средства для ухода</h2>
+      <h1 class="shop-main-title">Средства для ухода</h1>
       <ul class="bread-crumbs">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
@@ -35,87 +36,109 @@
     </div>
     <div class="filter">
       <form class="filter-items" action="#" method="post">
-        <h2>Производители</h2>
-        <ul class="filter-brands">
-          <li>
-            <input type="checkbox" name="Baxter_of_california" id="checkbox_1" checked> <label for="checkbox_1">Baxter of california</label>
-          <li>
-          <li>
-            <input type="checkbox" name="Mr_Natty" id="checkbox_2"> <label for="checkbox_2">Mr Natty</label>
-          </li>
-          <li>
-            <input type="checkbox" name="Suavecito" id="checkbox_3" checked> <label for="checkbox_3">Suavecito</label>
-          </li>
-          <li>
-            <input type="checkbox" name="Malin_Goetz" id="checkbox_4"> <label for="checkbox_4">Malin-Goetz</label>
-          </li>
-          <li>
-            <input type="checkbox" name="Murray's" id="checkbox_5"> <label for="checkbox_5">Murray's</label>
-          </li>
-          <li>
-            <input type="checkbox" name="Malin_Goetz" id="checkbox_6" checked> <label for="checkbox_6">American crew</label>
-          </li>
-        </ul>
-        <h2>Группы товаров:</h2>
-        <ul class="filter-groups">
-          <li>
-            <input type="radio" name="goods_group" value="for_shave" id="radio_1"> <label for="radio_1">Бритвенные принадлежности</label>
-          </li>
-          <li>
-            <input type="radio" name="goods_group" value="for_care" id="radio_2" checked> <label for="radio_2">Средства для ухода</label>
-          </li>
-          <li>
-            <input type="radio" name="goods_group" value="accessories" id="radio_3"> <label for="radio_3">Аксессуары</label>
-          </li>
-        </ul>
+        <fieldset class="filter-fieldset">
+        <legend class="filter-legend">Производители:</legend>         
+            <ul class="filter-brands">
+              <li>
+                <input type="checkbox" name="Baxter_of_california" id="checkbox_1" checked> <label for="checkbox_1">Baxter of california</label>
+              <li>
+              <li>
+                <input type="checkbox" name="Mr_Natty" id="checkbox_2"> <label for="checkbox_2">Mr Natty</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Suavecito" id="checkbox_3" checked> <label for="checkbox_3">Suavecito</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Malin_Goetz" id="checkbox_4"> <label for="checkbox_4">Malin-Goetz</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Murray's" id="checkbox_5"> <label for="checkbox_5">Murray's</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Malin_Goetz" id="checkbox_6" checked> <label for="checkbox_6">American crew</label>
+              </li>
+            </ul>          
+        </fieldset>
+        <fieldset class="filter-fieldset">
+          <legend class="filter-legend">Группы товаров:</legend>
+          <ul class="filter-groups">
+            <li>
+              <input type="radio" name="goods_group" value="for_shave" id="radio_1"> <label for="radio_1">Бритвенные принадлежности</label>
+            </li>
+            <li>
+              <input type="radio" name="goods_group" value="for_care" id="radio_2" checked> <label for="radio_2">Средства для ухода</label>
+            </li>
+            <li>
+              <input type="radio" name="goods_group" value="accessories" id="radio_3"> <label for="radio_3">Аксессуары</label>
+            </li>
+          </ul>
+        </fieldset>
         <button class="btn" type="submit">Показать</button>
       </form>
     </div>
     <div class="goods">
       <ul class="goods-list">
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Набор для путешествий <span>&laquo;Baxter of california&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/baxter_for_travel_small.jpg" alt="Placeholder" width="220" height="165"></a>
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Набор для путешествий</span>
+            <span class="item-title-name">&laquo;Baxter of California&raquo;</span>
+          </a>
           <div class="item-price-buy">
             <div class="item-price">2900 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
           </div>
         </li>
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Увлажняющий кондиционер <span>&laquo;Baxter of california&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/baxter_conditioner_small.jpg" alt="Placeholder" width="220" height="165"></a>
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Увлажняющий кондиционер</span>
+            <span class="item-title-name">&laquo;Baxter of California&raquo;</span>
+          </a>
           <div class="item-price-buy">
             <div class="item-price">750 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
           </div>
         </li>
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Гель для волос <span>&laquo;Suavecito&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/suavecito_gel_small.jpg" alt="Placeholder" width="220" height="165"></a>
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Гель для волос</span>
+            <span class="item-title-name">&laquo;Suavecito&raquo;</span>
+          </a>
           <div class="item-price-buy">
             <div class="item-price">290 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
           </div>
         </li>
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Глина для укладки волос <span>&laquo;American crew&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/american_crew_clay_small.jpg" alt="Placeholder" width="220" height="165"></a> 
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Глина для укладки волос</span>
+            <span class="item-title-name">&laquo;American Crew&raquo;</span>
+          </a>         
           <div class="item-price-buy">
             <div class="item-price">500 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
           </div>
         </li>
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Гель для волос <span>&laquo;American crew&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/american_crew_gel_small.jpg" alt="Placeholder" width="220" height="165"></a>
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Гель для волос</span>
+            <span class="item-title-name">&laquo;American Crew&raquo;</span>
+          </a>
           <div class="item-price-buy">
             <div class="item-price">300 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
           </div>
         </li>
         <li class="goods-item">
-          <a class="goods-item-preview"><img src="http://placehold.it/220x165" alt="Placeholder" width="220" height="165"></a>
-          <div class="goods-item-name">Набор для бритья <span>&laquo;Baxter of california&raquo;</span></div>
+          <a class="goods-item-preview" href="#"><img src="img/baxter_for_shave_small.jpg" alt="Placeholder" width="220" height="165"></a>
+          <a class="goods-item-title" href="#">
+            <span class="item-title-category">Набор для бритья</span>
+            <span class="item-title-name">&laquo;Baxter of California&raquo;</span>
+          </a>
           <div class="item-price-buy">
             <div class="item-price">3900 Руб</div>
             <a class="btn buy-btn" href="#">Купить</a>
@@ -124,7 +147,7 @@
       </ul>
       <ul class="pagination">
         <li><a class="btn" href="#">1</a></li>
-        <li><a class="btn current-btn" href="#">2</a></li>
+        <li class="btn current-btn">2</li>
         <li><a class="btn" href="#">3</a></li>
         <li><a class="btn" href="#">4</a></li>
         <li><a class="btn" href="#">5</a></li>
@@ -140,13 +163,13 @@
         Телефон: +7 (812) 666-02-66
       </div>
       <div class="footer-social">
-        <b>Давайте дружить!</b>
+        <span>Давайте дружить!</span>
         <a class="social-btn" href="#">Вконтакте</a>
         <a class="social-btn" href="#">Фейсбук</a>
         <a class="social-btn" href="#">Инстаграм</a>
       </div>
       <div class="footer-copyright">
-        <b>Разработано:</b>
+        <span>Разработано:</span>
         <a class="btn" href="#">Htmlacademy.ru</a>
       </div>
     </div>
